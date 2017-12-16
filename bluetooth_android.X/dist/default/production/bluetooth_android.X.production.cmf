@@ -1,0 +1,943 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\bluetooth_android.X.production.obj
+cinit CODE 0 26 26 2A 2
+text1 CODE 0 14F 14F 5D 2
+text2 CODE 0 50 50 94 2
+text3 CODE 0 E4 E4 6B 2
+text4 CODE 0 28D 28D 26 2
+text5 CODE 0 3EF 3EF 3 2
+text6 CODE 0 3D2 3D2 9 2
+text7 CODE 0 313 313 1C 2
+text8 CODE 0 1E8 1E8 37 2
+text9 CODE 0 21F 21F 37 2
+text10 CODE 0 256 256 37 2
+text11 CODE 0 393 393 14 2
+text12 CODE 0 365 365 18 2
+text13 CODE 0 3BA 3BA C 2
+text14 CODE 0 3A7 3A7 13 2
+text15 CODE 0 3F2 3F2 3 2
+text16 CODE 0 1AC 1AC 3C 2
+text17 CODE 0 3E7 3E7 5 2
+text18 CODE 0 34B 34B 1A 2
+text19 CODE 0 3C6 3C6 C 2
+text20 CODE 0 2D4 2D4 21 2
+text22 CODE 0 2F5 2F5 1E 2
+text23 CODE 0 32F 32F 1C 2
+nvBANK1 BANK1 1 E9 E9 3 1
+maintext CODE 0 2B3 2B3 21 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 4F 1
+cstackBANK1 BANK1 1 DA DA F 1
+inittext CODE 0 3DB 3DB 6 2
+stringtext1 STRCODE 0 3EC 3EC 3 2
+intentry CODE 0 4 4 20 2
+bssBANK0 BANK0 1 6F 6F 1 1
+bssBANK1 BANK1 1 A0 A0 24 1
+bssBANK2 BANK2 1 120 120 40 1
+bssBANK3 BANK3 1 1A0 1A0 40 1
+idataBANK1 CODE 0 37D 37D 16 2
+dataBANK1 BANK1 1 C4 C4 16 1
+clrtext CODE 0 3E1 3E1 6 2
+bssCOMMON COMMON 1 7A 7A 2 1
+$C:\Users\negri\AppData\Local\Temp\s6cg.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 24 24 2 2
+config CONFIG 0 8007 8007 3 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EC-EF 1
+RAM 160-16F 1
+RAM 1E0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 EC-EF 1
+BANK2 160-16F 1
+BANK3 1E0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 3F5-1FFF 2
+ENTRY 2-3 2
+ENTRY 3F5-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2130-23EF 1
+CODE 2-3 2
+CODE 3F5-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 7C-7D 1
+STRCODE 2-3 2
+STRCODE 3F5-1FFF 2
+STRING 2-3 2
+STRING 3F5-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\bluetooth_android.X.production.obj
+26 cinit CODE >6425:C:\Users\negri\AppData\Local\Temp\s6cg.
+26 cinit CODE >6428:C:\Users\negri\AppData\Local\Temp\s6cg.
+26 cinit CODE >6506:C:\Users\negri\AppData\Local\Temp\s6cg.
+27 cinit CODE >6507:C:\Users\negri\AppData\Local\Temp\s6cg.
+28 cinit CODE >6508:C:\Users\negri\AppData\Local\Temp\s6cg.
+29 cinit CODE >6509:C:\Users\negri\AppData\Local\Temp\s6cg.
+2A cinit CODE >6510:C:\Users\negri\AppData\Local\Temp\s6cg.
+2B cinit CODE >6511:C:\Users\negri\AppData\Local\Temp\s6cg.
+2C cinit CODE >6512:C:\Users\negri\AppData\Local\Temp\s6cg.
+2D cinit CODE >6513:C:\Users\negri\AppData\Local\Temp\s6cg.
+2E cinit CODE >6514:C:\Users\negri\AppData\Local\Temp\s6cg.
+2F cinit CODE >6515:C:\Users\negri\AppData\Local\Temp\s6cg.
+32 cinit CODE >6532:C:\Users\negri\AppData\Local\Temp\s6cg.
+33 cinit CODE >6533:C:\Users\negri\AppData\Local\Temp\s6cg.
+34 cinit CODE >6537:C:\Users\negri\AppData\Local\Temp\s6cg.
+35 cinit CODE >6541:C:\Users\negri\AppData\Local\Temp\s6cg.
+36 cinit CODE >6542:C:\Users\negri\AppData\Local\Temp\s6cg.
+37 cinit CODE >6543:C:\Users\negri\AppData\Local\Temp\s6cg.
+38 cinit CODE >6544:C:\Users\negri\AppData\Local\Temp\s6cg.
+39 cinit CODE >6545:C:\Users\negri\AppData\Local\Temp\s6cg.
+3A cinit CODE >6546:C:\Users\negri\AppData\Local\Temp\s6cg.
+3D cinit CODE >6550:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E cinit CODE >6551:C:\Users\negri\AppData\Local\Temp\s6cg.
+3F cinit CODE >6552:C:\Users\negri\AppData\Local\Temp\s6cg.
+40 cinit CODE >6553:C:\Users\negri\AppData\Local\Temp\s6cg.
+41 cinit CODE >6554:C:\Users\negri\AppData\Local\Temp\s6cg.
+42 cinit CODE >6555:C:\Users\negri\AppData\Local\Temp\s6cg.
+45 cinit CODE >6559:C:\Users\negri\AppData\Local\Temp\s6cg.
+46 cinit CODE >6560:C:\Users\negri\AppData\Local\Temp\s6cg.
+47 cinit CODE >6561:C:\Users\negri\AppData\Local\Temp\s6cg.
+48 cinit CODE >6562:C:\Users\negri\AppData\Local\Temp\s6cg.
+49 cinit CODE >6563:C:\Users\negri\AppData\Local\Temp\s6cg.
+4A cinit CODE >6564:C:\Users\negri\AppData\Local\Temp\s6cg.
+4C cinit CODE >6570:C:\Users\negri\AppData\Local\Temp\s6cg.
+4C cinit CODE >6572:C:\Users\negri\AppData\Local\Temp\s6cg.
+4D cinit CODE >6573:C:\Users\negri\AppData\Local\Temp\s6cg.
+4E cinit CODE >6574:C:\Users\negri\AppData\Local\Temp\s6cg.
+4 intentry CODE >51:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+9 intentry CODE >54:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+11 intentry CODE >56:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+14 intentry CODE >57:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+15 intentry CODE >58:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+1D intentry CODE >60:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+1F intentry CODE >66:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/interrupt_manager.c
+32F text23 CODE >174:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+32F text23 CODE >177:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+332 text23 CODE >181:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+333 text23 CODE >182:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+334 text23 CODE >186:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+342 text23 CODE >187:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+345 text23 CODE >189:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+346 text23 CODE >191:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+34A text23 CODE >192:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2F5 text22 CODE >155:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2F5 text22 CODE >159:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2FA text22 CODE >161:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+307 text22 CODE >162:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+30A text22 CODE >164:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+30B text22 CODE >166:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+310 text22 CODE >167:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+311 text22 CODE >168:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+311 text22 CODE >170:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2D4 text20 CODE >132:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2D5 text20 CODE >134:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2D9 text20 CODE >138:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2DB text20 CODE >140:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2DE text20 CODE >141:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2DF text20 CODE >142:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2DF text20 CODE >144:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2E0 text20 CODE >145:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2EC text20 CODE >146:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2EF text20 CODE >148:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2F0 text20 CODE >150:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2F2 text20 CODE >152:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+2F4 text20 CODE >153:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+3C6 text19 CODE >123:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3C6 text19 CODE >125:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3CA text19 CODE >126:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3CE text19 CODE >127:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3D1 text19 CODE >128:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+34B text18 CODE >75:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+34B text18 CODE >78:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+34D text18 CODE >79:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+34E text18 CODE >84:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+351 text18 CODE >87:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+353 text18 CODE >90:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+355 text18 CODE >93:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+357 text18 CODE >96:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+358 text18 CODE >100:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+359 text18 CODE >101:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+35B text18 CODE >102:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+360 text18 CODE >104:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+361 text18 CODE >105:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+362 text18 CODE >106:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+363 text18 CODE >109:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+364 text18 CODE >110:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+3E7 text17 CODE >85:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3E7 text17 CODE >88:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3EA text17 CODE >90:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3EB text17 CODE >93:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+1AC text16 CODE >51:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1AC text16 CODE >56:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1AE text16 CODE >57:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1AF text16 CODE >58:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1B1 text16 CODE >63:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1B4 text16 CODE >64:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1B6 text16 CODE >65:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1B8 text16 CODE >70:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1BB text16 CODE >71:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1BD text16 CODE >72:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1BF text16 CODE >77:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1C2 text16 CODE >78:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1C4 text16 CODE >79:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1C6 text16 CODE >80:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1C8 text16 CODE >85:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1CA text16 CODE >86:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1CB text16 CODE >87:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1CC text16 CODE >94:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D0 text16 CODE >95:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D1 text16 CODE >96:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D4 text16 CODE >97:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D6 text16 CODE >98:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D7 text16 CODE >100:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1D9 text16 CODE >101:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1DC text16 CODE >103:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1DF text16 CODE >104:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1E1 text16 CODE >105:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1E2 text16 CODE >107:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+1E7 text16 CODE >108:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/pin_manager.c
+3F2 text15 CODE >89:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3F2 text15 CODE >92:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3F4 text15 CODE >93:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3A7 text14 CODE >63:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3A7 text14 CODE >68:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3A9 text14 CODE >71:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3AA text14 CODE >74:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3AC text14 CODE >77:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3AE text14 CODE >80:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3B5 text14 CODE >83:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3B7 text14 CODE >86:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3B9 text14 CODE >87:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3BA text13 CODE >76:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3BA text13 CODE >79:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3BD text13 CODE >80:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3C0 text13 CODE >81:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3C3 text13 CODE >82:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+3C5 text13 CODE >83:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/mcc.c
+365 text12 CODE >56:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+365 text12 CODE >58:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+369 text12 CODE >59:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+36D text12 CODE >60:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+371 text12 CODE >61:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+375 text12 CODE >62:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+379 text12 CODE >63:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+37C text12 CODE >64:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+393 text11 CODE >114:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+393 text11 CODE >116:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+397 text11 CODE >117:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+39B text11 CODE >118:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+39F text11 CODE >119:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3A3 text11 CODE >120:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+3A6 text11 CODE >121:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+256 text10 CODE >98:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+257 text10 CODE >100:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+25B text10 CODE >101:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+25F text10 CODE >102:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+263 text10 CODE >103:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+264 text10 CODE >104:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+26D text10 CODE >105:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+276 text10 CODE >106:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+280 text10 CODE >108:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+284 text10 CODE >104:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+285 text10 CODE >110:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+289 text10 CODE >111:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+28C text10 CODE >112:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+21F text9 CODE >82:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+220 text9 CODE >84:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+224 text9 CODE >85:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+228 text9 CODE >86:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+22C text9 CODE >87:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+22D text9 CODE >88:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+236 text9 CODE >89:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+23F text9 CODE >90:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+249 text9 CODE >92:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+24D text9 CODE >88:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+24E text9 CODE >94:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+252 text9 CODE >95:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+255 text9 CODE >96:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1E8 text8 CODE >66:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1E9 text8 CODE >68:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1ED text8 CODE >69:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1F1 text8 CODE >70:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1F5 text8 CODE >71:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1F6 text8 CODE >72:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1FF text8 CODE >73:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+208 text8 CODE >74:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+212 text8 CODE >76:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+216 text8 CODE >72:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+217 text8 CODE >78:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+21B text8 CODE >79:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+21E text8 CODE >80:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+313 text7 CODE >112:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+313 text7 CODE >114:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+314 text7 CODE >116:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+317 text7 CODE >120:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+325 text7 CODE >121:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+328 text7 CODE >123:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+329 text7 CODE >125:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+32A text7 CODE >126:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+32C text7 CODE >127:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+32D text7 CODE >129:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/eusart.c
+3D2 text6 CODE >132:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3D2 text6 CODE >135:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3D6 text6 CODE >136:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3DA text6 CODE >137:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3EF text5 CODE >95:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3EF text5 CODE >98:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+3F1 text5 CODE >99:C:\Users\negri\Desktop\bluetooth_android.X\mcc_generated_files/tmr1.c
+28D text4 CODE >11:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+28D text4 CODE >13:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+290 text4 CODE >14:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+293 text4 CODE >15:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+295 text4 CODE >16:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2A3 text4 CODE >18:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2A6 text4 CODE >19:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2A9 text4 CODE >20:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2AB text4 CODE >16:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2B0 text4 CODE >22:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2B2 text4 CODE >23:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+E4 text3 CODE >26:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+E6 text3 CODE >28:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+E7 text3 CODE >29:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+E9 text3 CODE >31:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+F0 text3 CODE >32:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+F5 text3 CODE >33:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+FF text3 CODE >35:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+103 text3 CODE >39:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+110 text3 CODE >40:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+114 text3 CODE >41:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+120 text3 CODE >45:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+123 text3 CODE >46:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+12D text3 CODE >43:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+130 text3 CODE >48:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+135 text3 CODE >50:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+13C text3 CODE >51:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+146 text3 CODE >37:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+149 text3 CODE >53:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+50 text2 CODE >131:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+50 text2 CODE >134:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+5E text2 CODE >135:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+6C text2 CODE >136:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+7A text2 CODE >137:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+83 text2 CODE >140:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+86 text2 CODE >141:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+93 text2 CODE >143:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+9A text2 CODE >145:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+9E text2 CODE >146:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+AB text2 CODE >148:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+AF text2 CODE >149:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+BC text2 CODE >151:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+C0 text2 CODE >152:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+CD text2 CODE >154:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+D0 text2 CODE >155:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+DD text2 CODE >157:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+E3 text2 CODE >158:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+14F text1 CODE >160:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+14F text1 CODE >162:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+153 text1 CODE >163:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+157 text1 CODE >164:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+15B text1 CODE >165:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+15F text1 CODE >166:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+163 text1 CODE >167:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+167 text1 CODE >168:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+16B text1 CODE >169:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+16F text1 CODE >170:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+173 text1 CODE >171:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+174 text1 CODE >172:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+182 text1 CODE >173:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+190 text1 CODE >174:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+19F text1 CODE >176:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1A3 text1 CODE >172:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1A4 text1 CODE >178:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1A8 text1 CODE >179:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+1AB text1 CODE >180:C:\Users\negri\Desktop\bluetooth_android.X\init.c
+2B3 maintext CODE >53:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2B3 maintext CODE >56:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2B6 maintext CODE >62:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2B7 maintext CODE >65:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2B8 maintext CODE >74:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2BB maintext CODE >75:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2BE maintext CODE >81:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2C1 maintext CODE >82:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2C3 maintext CODE >83:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2CA maintext CODE >84:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2D1 maintext CODE >86:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+2D3 maintext CODE >77:C:\Users\negri\Desktop\bluetooth_android.X\main.c
+3E1 clrtext CODE >6521:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E1 clrtext CODE >6522:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E2 clrtext CODE >6523:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E2 clrtext CODE >6524:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E3 clrtext CODE >6525:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E4 clrtext CODE >6526:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E5 clrtext CODE >6527:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E6 clrtext CODE >6528:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DB inittext CODE >6495:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DB inittext CODE >6496:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DC inittext CODE >6497:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DC inittext CODE >6498:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DD inittext CODE >6499:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DE inittext CODE >6500:C:\Users\negri\AppData\Local\Temp\s6cg.
+3DF inittext CODE >6501:C:\Users\negri\AppData\Local\Temp\s6cg.
+3E0 inittext CODE >6502:C:\Users\negri\AppData\Local\Temp\s6cg.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_EUSART_Read 626 0 CODE 0 text7 dist/default/production\bluetooth_android.X.production.obj
+__size_of_TMR1_StopTimer 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__size_of_send_temp_RN4020 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hspace_0 800A 0 ABS 0 - -
+__Hspace_1 1E0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__size_of_TMR1_Reload 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_T1CONbits 18 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_BLE_Reboot 726 0 CODE 0 text11 dist/default/production\bluetooth_android.X.production.obj
+_LATA 10C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_LATB 10D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_LATC 10E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_WPUA 20C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_WPUB 20D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_WPUC 20E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\negri\AppData\Local\Temp\s6cg.obj
+_main 566 0 CODE 0 maintext dist/default/production\bluetooth_android.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_BLE_SetService 43E 0 CODE 0 text8 dist/default/production\bluetooth_android.X.production.obj
+start 48 0 CODE 0 init C:\Users\negri\AppData\Local\Temp\s6cg.obj
+_EUSART_Write 5A8 0 CODE 0 text20 dist/default/production\bluetooth_android.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_BLE_SetRole 43E 0 CODE 0 text9 dist/default/production\bluetooth_android.X.production.obj
+__end_of_BLE_StartBroadcast 7A4 0 CODE 0 text19 dist/default/production\bluetooth_android.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+BLE_SetService@count 76 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_EUSART_Initialize 6CA 0 CODE 0 text18 dist/default/production\bluetooth_android.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+delay_ms@msec 72 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_TMR1_StartTimer 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_BLE_SetDeviceName 4AC 0 CODE 0 text10 dist/default/production\bluetooth_android.X.production.obj
+_init_RN4020 A0 0 CODE 0 text2 dist/default/production\bluetooth_android.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\negri\AppData\Local\Temp\s6cg.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 19D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_BLE_StartBroadcast 78C 0 CODE 0 text19 dist/default/production\bluetooth_android.X.production.obj
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_EUSART_Transmit_ISR 626 0 CODE 0 text22 dist/default/production\bluetooth_android.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_eusartTxBuffer A0 0 BANK1 1 bssBANK1 dist/default/production\bluetooth_android.X.production.obj
+__end_of_BLE_Reboot 74E 0 CODE 0 text11 dist/default/production\bluetooth_android.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_ANSELC 18E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_INTERRUPT_InterruptManager 48 0 CODE 0 intentry dist/default/production\bluetooth_android.X.production.obj
+read_data_UART@buf 24 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+__end_of_EUSART_Write 5EA 0 CODE 0 text20 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@F12065 1A0 0 BANK3 1 bssBANK3 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@F12067 CD 0 BANK1 1 dataBANK1 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@F12069 C4 0 BANK1 1 dataBANK1 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@F12071 D6 0 BANK1 1 dataBANK1 dist/default/production\bluetooth_android.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+BLE_SetRole@role 75 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+PIN_MANAGER_Initialize@state 72 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+send_temp_RN4020@data 74 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+_EUSART_Initialize 696 0 CODE 0 text18 dist/default/production\bluetooth_android.X.production.obj
+BLE_SetDeviceName@count 76 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+BLE_SetService@service 75 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+_PIN_MANAGER_Initialize 358 0 CODE 0 text16 dist/default/production\bluetooth_android.X.production.obj
+start_initialization 4C 0 CODE 0 cinit dist/default/production\bluetooth_android.X.production.obj
+_ODCONA 28C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_ODCONB 28D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_ODCONC 28E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_eusartRxBuffer 120 0 BANK2 1 bssBANK2 dist/default/production\bluetooth_android.X.production.obj
+_RB7PPS E9F 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_RC1REG 199 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_RC1STA 19D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_SYSTEM_Initialize 78C 0 CODE 0 text13 dist/default/production\bluetooth_android.X.production.obj
+clear_ram0 7C2 0 CODE 0 clrtext dist/default/production\bluetooth_android.X.production.obj
+_SPBRGH 19C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_SPBRGL 19B 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+__pcstackBANK1 DA 0 BANK1 1 cstackBANK1 dist/default/production\bluetooth_android.X.production.obj
+_T1GCON 19 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TMR1_Reload 7A4 0 CODE 0 text6 dist/default/production\bluetooth_android.X.production.obj
+_TMR1IF 80 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TX1REG 19A 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TX1STA 19E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+send_temp_RN4020@count 79 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@error E7 0 BANK1 1 cstackBANK1 dist/default/production\bluetooth_android.X.production.obj
+__size_of_read_data_UART 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\negri\AppData\Local\Temp\s6cg.obj
+__end_of_EUSART_Read 65E 0 CODE 0 text7 dist/default/production\bluetooth_android.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit A0 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 19F 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+read_data_UART@size 77 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10014 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 4C 0 CODE 0 cinit -
+_T1GCONbits 19 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+init_ram 7B6 0 CODE 0 inittext dist/default/production\bluetooth_android.X.production.obj
+_TMR1_StopTimer 7DE 0 CODE 0 text5 dist/default/production\bluetooth_android.X.production.obj
+__Linittext 0 0 ABS 0 inittext -
+_PORTCbits E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 48 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 48 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 7D8 0 STRCODE 0 stringtext1 dist/default/production\bluetooth_android.X.production.obj
+__pstringtext2 0 0 STRCODE 0 stringtext2 dist/default/production\bluetooth_android.X.production.obj
+__pnvBANK1 E9 0 BANK1 1 nvBANK1 dist/default/production\bluetooth_android.X.production.obj
+__end_of_BLE_SetRole 4AC 0 CODE 0 text9 dist/default/production\bluetooth_android.X.production.obj
+__CFG_WDTCWS$WDTCWSSW 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_GIE 5F 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__S0 800A 0 ABS 0 - -
+__S1 1E0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_BLE_PartialReset 6CA 0 CODE 0 text12 dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_SetService 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_Reboot 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+read_data_UART@i 25 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+read_data_UART@j 22 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_init_RN4020 1C8 0 CODE 0 text2 dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_StartBroadcast 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__end_of_EUSART_Receive_ISR 696 0 CODE 0 text23 dist/default/production\bluetooth_android.X.production.obj
+_SYSTEM_Initialize 774 0 CODE 0 text13 dist/default/production\bluetooth_android.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+BLE_SetDeviceName@name 75 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\negri\AppData\Local\Temp\s6cg.obj
+EUSART_Read@readValue 73 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__end_of_TMR1_StopTimer 7E4 0 CODE 0 text5 dist/default/production\bluetooth_android.X.production.obj
+__pdataBANK1 C4 0 BANK1 1 dataBANK1 dist/default/production\bluetooth_android.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\bluetooth_android.X.production.obj
+_PIE1bits 90 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__ptext10 4AC 0 CODE 0 text10 dist/default/production\bluetooth_android.X.production.obj
+__ptext11 726 0 CODE 0 text11 dist/default/production\bluetooth_android.X.production.obj
+__ptext12 6CA 0 CODE 0 text12 dist/default/production\bluetooth_android.X.production.obj
+__ptext13 774 0 CODE 0 text13 dist/default/production\bluetooth_android.X.production.obj
+__ptext14 74E 0 CODE 0 text14 dist/default/production\bluetooth_android.X.production.obj
+__ptext15 7E4 0 CODE 0 text15 dist/default/production\bluetooth_android.X.production.obj
+__ptext16 358 0 CODE 0 text16 dist/default/production\bluetooth_android.X.production.obj
+__ptext17 7CE 0 CODE 0 text17 dist/default/production\bluetooth_android.X.production.obj
+__ptext18 696 0 CODE 0 text18 dist/default/production\bluetooth_android.X.production.obj
+__ptext19 78C 0 CODE 0 text19 dist/default/production\bluetooth_android.X.production.obj
+__ptext20 5A8 0 CODE 0 text20 dist/default/production\bluetooth_android.X.production.obj
+__ptext22 5EA 0 CODE 0 text22 dist/default/production\bluetooth_android.X.production.obj
+__ptext23 65E 0 CODE 0 text23 dist/default/production\bluetooth_android.X.production.obj
+_EUSART_Receive_ISR 65E 0 CODE 0 text23 dist/default/production\bluetooth_android.X.production.obj
+__end_of_PIN_MANAGER_Initialize 3D0 0 CODE 0 text16 dist/default/production\bluetooth_android.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 566 0 CODE 0 maintext dist/default/production\bluetooth_android.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+__end_of_BLE_PartialReset 6FA 0 CODE 0 text12 dist/default/production\bluetooth_android.X.production.obj
+__size_of_EUSART_Read 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+stackhi 23EF 0 ABS 0 - C:\Users\negri\AppData\Local\Temp\s6cg.obj
+stacklo 2130 0 ABS 0 - C:\Users\negri\AppData\Local\Temp\s6cg.obj
+_OSCTUNE 98 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_PartialReset 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_SetDeviceName 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\bluetooth_android.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+delay_ms@x 75 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+_PIR1bits 10 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lend_init 48 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_delay_ms 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+end_of_initialization 98 0 CODE 0 cinit dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@service 66 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+__Hintentry 48 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@name E3 0 BANK1 1 cstackBANK1 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@role DA 0 BANK1 1 cstackBANK1 dist/default/production\bluetooth_android.X.production.obj
+_PPSLOCKbits E0F 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__size_of_BLE_SetRole 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__CFG_WDTCCS$SWC 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__end_of_TMR1_Reload 7B6 0 CODE 0 text6 dist/default/production\bluetooth_android.X.production.obj
+__ptext1 29E 0 CODE 0 text1 dist/default/production\bluetooth_android.X.production.obj
+__ptext2 A0 0 CODE 0 text2 dist/default/production\bluetooth_android.X.production.obj
+__ptext3 1C8 0 CODE 0 text3 dist/default/production\bluetooth_android.X.production.obj
+__ptext4 51A 0 CODE 0 text4 dist/default/production\bluetooth_android.X.production.obj
+__ptext5 7DE 0 CODE 0 text5 dist/default/production\bluetooth_android.X.production.obj
+__ptext6 7A4 0 CODE 0 text6 dist/default/production\bluetooth_android.X.production.obj
+__ptext7 626 0 CODE 0 text7 dist/default/production\bluetooth_android.X.production.obj
+__ptext8 3D0 0 CODE 0 text8 dist/default/production\bluetooth_android.X.production.obj
+__ptext9 43E 0 CODE 0 text9 dist/default/production\bluetooth_android.X.production.obj
+_eusartTxBufferRemaining EB 0 BANK1 1 nvBANK1 dist/default/production\bluetooth_android.X.production.obj
+__size_of_init_RN4020 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_TMR1_Initialize 774 0 CODE 0 text14 dist/default/production\bluetooth_android.X.production.obj
+__end_of_TMR1_StartTimer 7EA 0 CODE 0 text15 dist/default/production\bluetooth_android.X.production.obj
+_send_temp_RN4020 29E 0 CODE 0 text1 dist/default/production\bluetooth_android.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__CFG_WDTCPS$WDTCPS1F 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+EUSART_Write@txData 73 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__end_of__initialization 98 0 CODE 0 cinit dist/default/production\bluetooth_android.X.production.obj
+_delay_ms 51A 0 CODE 0 text4 dist/default/production\bluetooth_android.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+_read_data_UART 1C8 0 CODE 0 text3 dist/default/production\bluetooth_android.X.production.obj
+__pidataBANK1 6FA 0 CODE 0 idataBANK1 dist/default/production\bluetooth_android.X.production.obj
+_eusartRxCount 7A 0 COMMON 1 bssCOMMON dist/default/production\bluetooth_android.X.production.obj
+__size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+_timer1ReloadVal E9 0 BANK1 1 nvBANK1 dist/default/production\bluetooth_android.X.production.obj
+__end_of_delay_ms 566 0 CODE 0 text4 dist/default/production\bluetooth_android.X.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+BLE_SetRole@count 76 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+__Hend_init 4C 0 CODE 0 end_init -
+__end_of_main 5A8 0 CODE 0 maintext dist/default/production\bluetooth_android.X.production.obj
+_LATA5 865 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_RXPPS E24 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_T1CON 18 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TMR1H 17 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TMR1L 16 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TRISB 8D 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_TRISC 8E 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_TMR1_Initialize 74E 0 CODE 0 text14 dist/default/production\bluetooth_android.X.production.obj
+_TMR1_StartTimer 7E4 0 CODE 0 text15 dist/default/production\bluetooth_android.X.production.obj
+__end_of_BLE_SetDeviceName 51A 0 CODE 0 text10 dist/default/production\bluetooth_android.X.production.obj
+init_RN4020@buf 26 0 BANK0 1 cstackBANK0 dist/default/production\bluetooth_android.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\bluetooth_android.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+_BLE_SetService 3D0 0 CODE 0 text8 dist/default/production\bluetooth_android.X.production.obj
+__end_of_OSCILLATOR_Initialize 7D8 0 CODE 0 text17 dist/default/production\bluetooth_android.X.production.obj
+__CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__initialization 4C 0 CODE 0 cinit dist/default/production\bluetooth_android.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+__pbssBANK0 6F 0 BANK0 1 bssBANK0 dist/default/production\bluetooth_android.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\bluetooth_android.X.production.obj
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\bluetooth_android.X.production.obj
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\bluetooth_android.X.production.obj
+__end_of_read_data_UART 29E 0 CODE 0 text3 dist/default/production\bluetooth_android.X.production.obj
+_PPSLOCK E0F 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_EUSART_Transmit_ISR 5EA 0 CODE 0 text22 dist/default/production\bluetooth_android.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_eusartRxHead C3 0 BANK1 1 bssBANK1 dist/default/production\bluetooth_android.X.production.obj
+_eusartRxTail C2 0 BANK1 1 bssBANK1 dist/default/production\bluetooth_android.X.production.obj
+__size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\bluetooth_android.X.production.obj
+_eusartTxHead 7B 0 COMMON 1 bssCOMMON dist/default/production\bluetooth_android.X.production.obj
+_eusartTxTail 6F 0 BANK0 1 bssBANK0 dist/default/production\bluetooth_android.X.production.obj
+__end_of_send_temp_RN4020 358 0 CODE 0 text1 dist/default/production\bluetooth_android.X.production.obj
+?_read_data_UART 77 0 COMMON 1 cstackCOMMON dist/default/production\bluetooth_android.X.production.obj
+_OSCILLATOR_Initialize 7CE 0 CODE 0 text17 dist/default/production\bluetooth_android.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text5 0 3EF 7DE 6 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 50 1
+stringtext1 0 3EC 7D8 3 2
+intentry 0 4 8 3E8 2
+reset_vec 0 0 0 2 2
+bssBANK1 1 A0 A0 4C 1
+bssBANK2 1 120 120 40 1
+bssBANK3 1 1A0 1A0 40 1
+config 0 8007 1000E 3 2
