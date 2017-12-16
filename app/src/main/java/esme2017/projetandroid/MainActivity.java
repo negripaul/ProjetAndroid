@@ -45,9 +45,9 @@ import java.util.UUID;
 
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
-    public static final UUID UUID_POTAR = UUID.fromString("00001809-0000-1000-8000-00805f9b34fb");
+    public static final UUID UUID_POTAR = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
 
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeScanner mBluetoothLeScanner;
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mFragmentButton;
     private Button mScanButton;
+    private Button video_button;
     private ListView listViewLE;
     private List<BluetoothDevice> listBluetoothDevice;
     private List<String> listStringBluetoothDevice;
@@ -85,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             mPotarValueTextView.setText(String.valueOf(value_potar));
 //            value_potar += 1;
 //            mPotarValueTextView.setText(String.valueOf(value_potar));
+            if(value_potar==1){
+
+                Intent intent=new Intent(getApplicationContext(),VideoActivity.class);
+                //on lance l'intent, cela a pour effet de stoper l'activité courante et lancer une autre activite ici SecondActivite
+                startActivity(intent);
+                value_potar =0;
+            }
 
             mHandler2.postDelayed(this, 1000);
         }
@@ -101,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        video_button = (Button) findViewById(R.id.video_button);
 
 
         //        myIntent = new Intent(getApplicationContext(), MapActivity.class);
